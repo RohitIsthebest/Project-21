@@ -42,8 +42,12 @@ function draw() {
 
   ellipseMode(CENTER)
 
-    ellipse(ball.position.x,ball.position.y,40)
-
+    push()
+    fill("white")
+    ellipse(ball.position.x,ball.position.y,23)
+	pop()
+	
+	
     mainground.display()
 
     leftside.display()
