@@ -44,7 +44,7 @@ function draw() {
 
     push()
     fill("white")
-    ellipse(ball.position.x,ball.position.y,23)
+    ellipse(ball.position.x,ball.position.y,20)
 	pop()
 	
 	
