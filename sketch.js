@@ -18,13 +18,10 @@ function setup() {
 	world = engine.world;
 
 
-    var ball_option = {
-        isStatic:false,
-        friction:0,
-        restitution:0.8,
-        density:1.2
+    var ball_option={
+	restituton:0.2,
+        density:1
     }
-
 
     ball = Bodies.circle(150,250,10,ball_option)
     World.add(world,ball)
@@ -60,7 +57,7 @@ function draw() {
 
 function Keypressed(){
     if(keyDown("up_arrow")){
-        Matter.Body.applyForce(ball,{x:0,y:0},{x:0.05,y:0})
+        Matter.Body.applyForce(ball,{x:0,y:0},{x:0.06,y:-0.01})
     }
 }
 
